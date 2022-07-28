@@ -9,6 +9,7 @@ import { cartActions } from "../store/cartSlice";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
+
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   return (
@@ -78,7 +79,7 @@ const Tr = (props) => {
       <td className="text-center">${price}</td>
       <td className="text-center">{quantity}px</td>
       <td className="text-center cart__item-del">
-        <i class="ri-delete-bin-line" onClick={deleteItem}></i>
+        <i className="ri-delete-bin-line" onClick={deleteItem}></i>
       </td>
     </tr>
   );

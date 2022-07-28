@@ -14,9 +14,12 @@
 .header.header-fixed {
   background-color: #fbfbfb;
   height: 9vh;
-  box-shadow: 0 0 10px 0 rgb(255 157 66/ 10%);
+  box-shadow: 0 0 12px 0 rgb(255 157 66/ 12%);
 }
 
+.header-fixed {
+  color: #212245;
+}
 .logo {
   display: flex;
   flex-direction: column;
@@ -35,6 +38,9 @@
   font-size: 1rem;
   color: #212245;
 }
+.text-white {
+  color: white;
+}
 
 .menu a {
   font-weight: 600;
@@ -52,10 +58,14 @@
 }
 
 .cart__icon i,
-.user i{
+.user i {
   font-size: 1.3rem;
   color: #212245;
   cursor: pointer;
+}
+.cart__icon.text-white i,
+.user.text-white i {
+  color: white;
 }
 
 .cart__icon {
@@ -99,7 +109,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    height: 100vh;
+    height: 105vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +117,7 @@
     width: 40%;
     transform: translateX(100%);
     transition: 0.5s ease;
-    z-index: 99;
+    z-index: 1000;
     background-color: white;
   }
   .navigation.active {
@@ -126,7 +136,6 @@
   .menu a {
     font-size: 0.9rem;
   }
-
 
   .cart__icon i,
   .user i {
@@ -164,6 +173,9 @@
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+  .menu-btn__burger.bg-white {
+    background-color: white;
+  }
   .menu-btn__burger:before,
   .menu-btn__burger:after {
     content: "";
@@ -174,6 +186,10 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .menu-btn__burger.bg-white:before,
+  .menu-btn__burger.bg-white:after {
+    background-color: white;
   }
   .menu-btn__burger:before {
     transform: translateY(-6.6px);
@@ -192,5 +208,17 @@
 
   .navigation {
     width: 100%;
+  }
+  .cart__badge {
+    top: 15px;
+    right: -10px;
+  }
+  .logo img {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    width: calc(100% - 75%);
+  }
+  .logo h5 {
+    font-size: 0.8rem;
   }
 }

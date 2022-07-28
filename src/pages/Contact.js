@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div style={{marginTop:'12vh'}}>
-            
-        </div>
+            <div style={{marginTop:'12vh'}}>
+                
+            </div>
     );
 };
 

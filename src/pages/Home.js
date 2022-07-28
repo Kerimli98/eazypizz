@@ -193,7 +193,13 @@ const Home = () => {
             </Col>
 
             <Col lg="12">
-              <div className="food__category d-flex align-items-center justify-content-center gap-4">
+              <div
+                className={
+                  window.innerWidth < 420
+                    ? "food__category d-flex align-items-center justify-content-center gap-1"
+                    : "food__category d-flex align-items-center justify-content-center gap-4"
+                }
+              >
                 <button
                   className={`all__btn 
               ${category === "ALL" ? "foodBtnActive" : ""} 
