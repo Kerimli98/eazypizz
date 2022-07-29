@@ -1,14 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  cartItems: [],
-  totalQuantity: 0,
-  totalAmount: 0,
-};
-
 const cartSlice = createSlice({
   name: "cart",
-  initialState,
+  initialState: { cartItems: [], totalQuantity: 0, totalAmount: 0 },
 
   reducers: {
     // =========== add item ============
@@ -20,8 +14,6 @@ const cartSlice = createSlice({
       state.totalQuantity++;
 
       if (!existingItem) {
-        // ===== note: if you use just redux you should not mute state array instead of clone the state array, but if you use redux toolkit that will not a problem because redux toolkit clone the array behind the scene
-
         state.cartItems.push({
           id: newItem.id,
           title: newItem.title,
@@ -51,7 +43,7 @@ const cartSlice = createSlice({
       state.totalQuantity--;
 
       if (existingItem.quantity === 1) {
-        state.cartItems = state.cartItems.filter((item) => item.id !== id);
+        state.cartItems = state.cartItems.filter((item) => item.id === id);
       } else {
         existingItem.quantity--;
         existingItem.totalPrice =

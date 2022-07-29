@@ -68,8 +68,8 @@ const Footer = () => {
         <Row className="mt-5">
           <Col lg="6" md="6">
             <p className="copyright__text">
-              Copyright - 2022, website made by Muhibur Rahman. All Rights
-              Reserved.
+              Copyright - {new Date().getFullYear()}, website made by Fatima
+              Karimli. All Rights Reserved.
             </p>
           </Col>
           <Col lg="6" md="6">

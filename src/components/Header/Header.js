@@ -38,8 +38,6 @@ const Header = () => {
   };
   window.addEventListener("scroll", changeNavBg);
 
-  //   const menuRef = useRef(null);
-  //   const headerRef = useRef(null);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
 
@@ -51,7 +49,6 @@ const Header = () => {
   return (
     <header
       className={navbar ? "header header-fixed" : "header"}
-      //   ref={headerRef}
     >
       <Container className="nav-container">
         <div className=" nav__wrapper d-flex align-items-center justify-content-between">
