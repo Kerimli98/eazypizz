@@ -47,9 +47,7 @@ const Header = () => {
   let location = useLocation();
 
   return (
-    <header
-      className={navbar ? "header header-fixed" : "header"}
-    >
+    <header className={navbar ? "header header-fixed" : "header"}>
       <Container className="nav-container">
         <div className=" nav__wrapper d-flex align-items-center justify-content-between">
           <NavLink to="/home" className="logo">
@@ -59,6 +57,7 @@ const Header = () => {
                 location.pathname.includes("cart") |
                   location.pathname.includes("foods") |
                   location.pathname.includes("login") |
+                  location.pathname.includes("register") |
                   location.pathname.includes("checkout") && !navbar
                   ? "text-white"
                   : "header-fixed"
@@ -82,6 +81,7 @@ const Header = () => {
                       : location.pathname.includes("cart") |
                           location.pathname.includes("foods") |
                           location.pathname.includes("login") |
+                          location.pathname.includes("register") |
                           location.pathname.includes("checkout") && !menu
                       ? "text-white"
                       : "header-fixed"
@@ -100,6 +100,7 @@ const Header = () => {
                 location.pathname.includes("cart") |
                   location.pathname.includes("foods") |
                   location.pathname.includes("login") |
+                  location.pathname.includes("register") |
                   location.pathname.includes("checkout") && !navbar
                   ? "text-white cart__icon"
                   : "cart__icon"
@@ -115,6 +116,7 @@ const Header = () => {
                 location.pathname.includes("cart") |
                   location.pathname.includes("foods") |
                   location.pathname.includes("login") |
+                  location.pathname.includes("register") |
                   location.pathname.includes("checkout") && !navbar
                   ? "text-white user"
                   : "user"
@@ -134,6 +136,7 @@ const Header = () => {
                   location.pathname.includes("cart") |
                     location.pathname.includes("foods") |
                     location.pathname.includes("login") |
+                    location.pathname.includes("register") |
                     location.pathname.includes("checkout") &&
                   !navbar &&
                   !menu
