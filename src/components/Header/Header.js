@@ -127,7 +127,7 @@ const Header = () => {
               </Link>
             </span>
 
-            {/* <div
+            <div
               onClick={() => setMenu(!menu)}
               className={"menu-btn " + (menu && "open")}
             >
@@ -144,7 +144,7 @@ const Header = () => {
                     : "menu-btn__burger"
                 }
               ></div>
-            </div> */}
+            </div>
           </div>
         </div>
       </Container>
