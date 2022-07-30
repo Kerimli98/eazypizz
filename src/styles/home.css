@@ -41,11 +41,11 @@
   color: #df2020 !important;
 }
 
-.tasty__treat-title span {
+.eazy__pizz-title span {
   color: #df2020;
 }
 
-.tasty__treat-desc {
+.eazy__pizz-desc {
   color: #777;
   line-height: 28px;
 }
@@ -126,7 +126,7 @@
     font-size: 0.7rem;
   }
 
-  .tasty__treat-desc {
+  .eazy__pizz-desc {
     font-size: 0.8rem;
     margin-bottom: 0;
   }

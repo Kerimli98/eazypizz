@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <header className={navbar ? "header header-fixed" : "header"}>
-      <Container className="nav-container">
+      <Container>
         <div className=" nav__wrapper d-flex align-items-center justify-content-between">
           <NavLink to="/home" className="logo">
             <img src={logo} alt="logo" />
@@ -127,7 +127,7 @@ const Header = () => {
               </Link>
             </span>
 
-            <div
+            {/* <div
               onClick={() => setMenu(!menu)}
               className={"menu-btn " + (menu && "open")}
             >
@@ -144,7 +144,7 @@ const Header = () => {
                     : "menu-btn__burger"
                 }
               ></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

@@ -253,15 +253,15 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="6" md="6">
-              <img src={whyImg} alt="why-tasty-treat" className="w-100" />
+              <img src={whyImg} alt="why-eazy-pizz" className="w-100" />
             </Col>
 
             <Col lg="6" md="6">
-              <div className="why__tasty-treat">
-                <h2 className="tasty__treat-title mb-4">
-                  Why <span>Tasty Treat?</span>
+              <div className="why__eazy-pizz">
+                <h2 className="eazy__pizz-title mb-4">
+                  Why <span>Eazy Pizz?</span>
                 </h2>
-                <p className="tasty__treat-desc">
+                <p className="eazy__pizz-desc">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dolorum, minus. Tempora reprehenderit a corporis velit,
                   laboriosam vitae ullam, repellat illo sequi odio esse iste
