@@ -1,4 +1,4 @@
-# Ecommerce website - EazyPizz"
+# Ecommerce website - EazyPizz
 
 ## Food delivery app ecommerce website
 
