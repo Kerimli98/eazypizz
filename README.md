@@ -17,7 +17,7 @@
 
 ## How To Use
 
-From your command line, clone and run react-portfolio-template:
+From your command line:
 
 ```bash
 # Clone this repository
