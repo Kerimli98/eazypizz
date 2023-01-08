@@ -82,7 +82,7 @@ const Header = () => {
                           location.pathname.includes("foods") |
                           location.pathname.includes("login") |
                           location.pathname.includes("register") |
-                          location.pathname.includes("checkout") && !menu
+                          location.pathname.includes("checkout") && !navbar
                       ? "text-white"
                       : "header-fixed"
                   }
